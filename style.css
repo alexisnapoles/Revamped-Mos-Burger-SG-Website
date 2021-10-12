@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* MOBILE-FIRST CSS STYLING */
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgba(248, 250, 165, 0.089);
+}
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.menu-bar {
+    display: flex;
+    position: relative;
+    background-image: url('mos-logo-transparent.png');
+    background-size: 7em;
+    background-repeat: no-repeat;
+    background-position: 1.25rem .25rem;
+    height: 10vh;   
+   /* background-color: rgba(221, 173, 17, 0.37); */
+    padding-left: 1em;
+}
+
+.bar-box {
+    display: flex;
+    text-decoration: none;
+    padding-left: 28rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.bars {
+    font-size: 3em;
+    color: rgb(236, 56, 56);
+    display: flex;
+}
+
+.menu-list {
+    display: none;  
+}
+
+/* HERO-SECTION */
+.hero-container {
+    margin: 1em;
+    height: 80vh;
+}
+
+.hero-image {
+    background-image: url('http://www.mosburger.com.sg/images/20210118/main.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 25em;
+}
+
+.burger-options {
+    display: flex;
+    flex-direction: row;
+    padding-top: .6em;
+}
+
+.card {
+    background-color: #fafafa;
+    height: 8em;
+    width: 8em;
+    border: 1px solid #eecc5bfa;
+    margin: .25em;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1em;
+}
+
+.card-1 {
+    background-image: url('http://www.mosburger.com.sg/image.php?im=25&t=0');
+}
+
+.card-2 {
+    background-image: url('http://www.mosburger.com.sg/image.php?im=7&t=0');
+}
+
+.card-3 {
+    background-image: url('http://www.mosburger.com.sg/image.php?im=34&t=0');
+}
+
+.card-4 {
+    background-image: url('http://www.mosburger.com.sg/image.php?im=164&t=0');
+}
+
+.hero-header {
+    margin: .5em 0em;
+    background-color: #97be56;
+    line-height: 2.5em;
+    color: #fff;
+    padding-left:.75em;
+}
+
+.hero-description {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.45rem;
+    padding: 0em .75em;
+}
+
+.hero-description h4 {
+    margin-bottom: .45em;
+    margin-top: .70em;
+}
+
+.hero-description h4>a {
+    text-decoration: none;
+}
+/* END HERO SECTION */
+
+/* FOOTER SECTION */
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 12em .75em 2em .75em;
+}
+
+.footer-links-box {
+    display: flex;
+    flex-direction: row;
+    padding: 0em 1em;
+}
+
+.delivery-services {
+    flex: .8;
+    align-items: initial;
+}
+
+.social-links {
+    flex: .25;
+}
+
+.social-links a>i {
+    font-size: 1.5em;
+    margin-left: .5em;
+}
+
+.delivery-services a,
+.social-links a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-text {
+    font-size: .8em;
+    padding-left: .5em;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: .5em;
+    font-size: .8em;
+}
+/* tablet-size */
+@media (min-width: 768px) {
+
+}
