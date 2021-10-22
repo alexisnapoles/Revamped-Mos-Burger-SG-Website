@@ -1,93 +1,483 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Revamped-Mos-Burg</title>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+
+    <title>MOS</title>
     </head>
     <body>
-        <div class="showcase">
-            <div class="menu-bar">
-                <a href="#" id="menu-list" class="bar-box">
-                    <i class="fas fa-bars bars"></i>
-                </a>    
-                <ul class="menu-list">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Outlets</a></li>
-                    <li><a href="#">Park</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
+        <!-- Starting line for the Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="offcanvasNavbarLabel" href="#"> 
+                    <img src="http://www.mosburger.com.sg/images/mos_logo.png" alt="" width="75" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                <a class="navbar-brand offcanvas-header" href="#"> 
+                    <img src="http://www.mosburger.com.sg/images/mos_logo.png" alt="" width="75" class="d-inline-block align-text-top">
+                </a>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about.html">About Mos</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#headingOne" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Mos Menu
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                    <li><a class="dropdown-item" href="mainMenu.html">Main Menu</a></li>
+                                    <li><a class="dropdown-item" href="sideTreat.html">Side Treat</a></li>
+                                    <li><a class="dropdown-item" href="soupTreat.html">Soup Treat</a></li>
+                                    <li><a class="dropdown-item" href="dessertTreat.html">Dessert Treat</a></li>
+                                    <li><a class="dropdown-item" href="drinkTreat.html">Drink Treat</a></li>
+                                    <li><a class="dropdown-item" href="breakfast.html">Breakfast</a></li>
+                                    <li><a class="dropdown-item" href="kidsMeal.html">Kids Meal</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="shopList.html" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Mos Outlets
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="shopList.html">Shop List</a></li>
+                                    <li><a class="dropdown-item" href="map.html">Singapore Map</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="contactUs.html">Contact Us</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p>Order Directly via our partner services:</p>
+                        <div class="d-flex partner-box">
+                            <ul class="nav me-auto mb-2 mb-lg-1">
+                            <li>
+                                <a href="https://www.foodpanda.sg/chain/cn4uu/mos-burger">
+                                    <img src="http://www.mosburger.com.sg/images/foodpanda.png" alt="foodpanda">
+                                </a>
+                                </li> 
+                                <li>
+                                <a href="https://deliveroo.com.sg/brands/mos-burger?fbclid=IwAR3gilPYaXRV1qIRtqu53mFFtiZ592oKmVz6n-D5oImj3vvr1hBNBKQlBXc">
+                                    <img src="http://www.mosburger.com.sg/images/deliveroo.png" alt="deliveroo">
+                                </a>
+                                </li> 
+                                <li>
+                                <a href="https://food.grab.com/sg/en/?utm_source=grab.com&utm_medium=referral&utm_campaign=hero-banner-food-product&pid=Grab.com&c=hero-banner">
+                                    <img src="http://www.mosburger.com.sg/images/grabfood.png" alt="grabfood">
+                                </a>
+                                </li> 
+                            </ul>
+                        </div>
+                        <p>Find us via our social media:</p>
+                        <div class="d-flex">
+                            <ul class="nav me-auto mb-2 mb-lg-1">
+                                <li>
+                                <a href="https://www.facebook.com/mosburgersg/">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                                </li> 
+                                <li>
+                                <a href="https://www.instagram.com/mosburgersg/">
+                                    <i class="fab fa-instagram-square"></i>
+                                </a>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
             </div>
-            <hr>
-            <div class="hero-container">
-                <div class="hero-image"></div>
-                <div class="burger-options">
-                    <div class="card card-1">
-                        
-                    </div>
-                    <div class="card card-2">
-                        
-                    </div>
-                    <div class="card card-3">
-                        
-                    </div>
-                    <div class="card card-4">
-                        
-                    </div>
-                </div>
-                <div class="hero-header">
-                    <h2>News</h2>
-                </div>
-                <div class="hero-description">
-                    <h4><a href="#">XL WAGYU MENCHIKATSU BURGER</a></h4>
-                    <p>MOS BURGER is going back to its roots by paying tribute to popular Japanese Menchi Katsu with the new XL Wagyu Menchikatsu Burger creations of crispy patty cutlets made from the signature Japanese Wagyu beef! Choice of curry sauce or Katsu sauce!</p>
-                </div>
-                <br>
-                <div class="hero-description">
-                    <h4><a href="#">CHEEZY WAGYU BURGER</a></h4>
-                    <p>WAGYU TEMPTATION SERIES has welcomed a new member - Cheezy Wagyu Burger! Premium Wagyu Beef patty topped with cheese sauce and bacon bits! Can you imagine this perfect combination?</p>
-                </div>
-            </div>    
         </div>
-        <div class="footer">
-            <hr>
-            &nbsp;
-            <div class="footer-links-box">
-                <div class="delivery-services">
-                    <div>
-                        <p class="footer-text">We deliver via:</p>
+        </nav>
+        <!-- ending line for the Navigation Bar -->
+
+        <!-- starting line for the hero -->
+        <main>
+            <picture>
+            <div class="text-center">
+                <img src="http://www.mosburger.com.sg/images/20210118/main.jpg" class="img-fluid" style="width:100%" alt="banner image">
+            </div>
+            </picture>
+        </main>
+        <!-- end of hero  -->
+        
+        <!-- start MOS MENU -->
+        <div class="accordion" id="accordionBasic">
+            <!-- Main Menu Featured Foods -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    MAIN MENU
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <!-- Main menu products -->
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                        <div class="col">
+                            <div class="card align-items-center text-center" style="width: auto;">
+                                <!-- item badge -->
+                                <span class="badge position-absolute top-0 start-0 translate-middle p-2 m-4 bg-danger border border-light rounded-circle text-white"> 
+                                    NEW!
+                                </span>
+                                <!-- item image -->
+                                <img src="http://www.mosburger.com.sg/image.php?im=175&t=2" class="card-img-top img-fluid " style="width: 10em" alt="main menu item">
+                                <!-- item name -->
+                                <div class="card-body">
+                                    <h6 class="card-title">XL Wagyu Menchikatsu Burger (Katsu)</h6>
+                                    <p class="card-text">$9.90</p>
+                                </div>
+                                <!-- item call to action -->
+                                <div>
+                                    <a href="#" class="btn btn-primary">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card align-items-center text-center" style="width: auto;">
+                                <!-- item badge -->
+                                <span class="badge position-absolute top-0 start-0 translate-middle p-2 m-4 bg-danger border border-light rounded-circle text-white"> NEW!
+                                </span>
+                                <!-- item image -->
+                                <img src="http://www.mosburger.com.sg/image.php?im=176&t=2" class="card-img-top" style="width: 10em" alt="...">
+                                <div class="card-body">
+                                    <!-- item name -->
+                                    <h6 class="card-title">XL Wagyu Menchikatsu Burger (Curry)</h6>
+                                    <p class="card-text">$9.90</p>
+                                </div>
+                                <div>
+                                    <!-- item call to action -->
+                                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="location.href='mainMenu.html'" class="btn">
+                            <span class="text-center border">
+                                VIEW MORE
+                            </span>
+                        </div>
                     </div>
-                    <div>
-                        <a href="">
-                            <img src="http://www.mosburger.com.sg/images/foodpanda.png" alt="">
-                        </a>
-                        <a href="">
-                            <img src="http://www.mosburger.com.sg/images/deliveroo.png" alt="">
-                        </a>
-                        <a href="">
-                            <img src="http://www.mosburger.com.sg/images/grabfood.png" alt="">
-                        </a>
+                </div>
+                </div>
+            </div>
+            <!-- Treats Featured Foods -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    TREATS
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                        <!-- Side Treats products -->
+                        <div class="col">
+                            <div class="card align-items-center text-center" style="width: auto;">
+                                <!-- item badge -->
+                                <span class="badge position-absolute top-0 start-0 translate-middle p-2 m-4 bg-success border border-light rounded-circle text-white"> Best Seller!
+                                </span>
+                                <!-- item image -->
+                                <img src="http://www.mosburger.com.sg/image.php?im=147&t=2" class="card-img-top img-fluid " style="width: 10em" alt="main menu item">
+                                <!-- item name -->
+                                <div class="card-body">
+                                    <h6 class="card-title">Variety Pack</h6>
+                                    <p class="card-text">
+                                        Onion Rings <br>
+                                        2 pieces MOS Chicken <br>
+                                        2 Large Size French Fries 
+                                    </p>
+                                    <p class="card-text">$16.65</p>
+                                </div>
+                                <!-- item call to action -->
+                                <div>
+                                    <a href="#" class="btn btn-primary">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card align-items-center text-center" style="width: auto;">
+                                <!-- item badge -->
+                                <span class="badge position-absolute top-0 start-0 translate-middle p-2 m-4 bg-success border border-light rounded-circle text-white"> Best Seller!
+                                </span>
+                                <!-- item image -->
+                                <img src="http://www.mosburger.com.sg/image.php?im=9&t=2" class="card-img-top" style="width: 10em" alt="...">
+                                <div class="card-body">
+                                    <!-- item name -->
+                                    <h6 class="card-title">XL Wagyu Menchikatsu Burger (Curry)</h6>
+                                    <p class="card-text">
+                                        $3.85(5pcs) <br>                                        
+                                        $9.35(15pcs)
+                                    </p>
+                                </div>
+                                <!-- item call to action -->
+                                <div>                                    
+                                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Soup Treats -->
+                        <div class="col">
+                            <div class="card align-items-center text-center" style="width: auto;">
+                                <!-- item badge -->
+                                <span class="badge position-absolute top-0 start-0 translate-middle p-2 m-4 bg-success border border-light rounded-circle text-white"> Best Seller!
+                                </span>
+                                <!-- item image -->
+                                <img src="http://www.mosburger.com.sg/image.php?im=18&t=2" class="card-img-top" style="width: 10em" alt="...">
+                                <div class="card-body">
+                                    <!-- item name -->
+                                    <h6 class="card-title">Clam Chowder Soup</h6>
+                                    <p class="card-text">$2.90</p>
+                                </div>
+                                <div>
+                                    <!-- item call to action -->
+                                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card align-items-center text-center" style="width: auto;">
+                                <!-- item badge -->
+                                <span class="badge position-absolute top-0 start-0 translate-middle p-2 m-4 bg-success border border-light rounded-circle text-white"> Best Seller!
+                                </span>
+                                <!-- item image -->
+                                <img src="http://www.mosburger.com.sg/image.php?im=17&t=2" class="card-img-top" style="width: 10em" alt="...">
+                                <div class="card-body">
+                                    <!-- item name -->
+                                    <h6 class="card-title">Corn Soup</h6>
+                                    <p class="card-text">$2.90</p>
+                                </div>
+                                <div>
+                                    <!-- item call to action -->
+                                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Dessert Treats -->
+                        <div class="col">
+                            <div class="card align-items-center text-center" style="width: auto;">
+                                <!-- item badge -->
+                                <span class="badge position-absolute top-0 start-0 translate-middle p-2 m-4 bg-success border border-light rounded-circle text-white"> Best Seller!
+                                </span>
+                                <!-- item image -->
+                                <img src="http://www.mosburger.com.sg/images/dessert/1.jpg" class="card-img-top" style="width: 10em" alt="...">
+                                <div class="card-body">
+                                    <!-- item name -->
+                                    <h6 class="card-title">Hokkaido Milk Ice Cream</h6>
+                                    <p class="card-text">$3.05</p>
+                                </div>
+                                <div>
+                                    <!-- item call to action -->
+                                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>  
-                <div class="social-links">
-                    <div>
-                        <p class="footer-text">Contact us:</p>
+                    <div onclick="location.href='mainMenu.html'" class="btn">
+                        <span class="text-center align-items-center border">
+                            VIEW MORE
+                        </span>
                     </div>
-                    <div> 
-                        <a href=""><i class="fab fa-facebook-square"></i></a>
-                        <a href=""><i class="fab fa-instagram-square"></i></a>
-                
+                </div>
+                </div>
+            </div>
+            <!-- Breakfast Featured Foods -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    BREAKFAST
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <!-- Main menu products -->
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                        <div class="col">
+                            <div class="card align-items-center text-center" style="width: auto;">
+                                <!-- item image -->
+                                <img src="http://www.mosburger.com.sg/image.php?im=130&t=2" class="card-img-top img-fluid " style="width: 10em" alt="main menu item">
+                                <!-- item name -->
+                                <div class="card-body">
+                                    <h6 class="card-title">Morning Deluxe Toast Plate</h6>
+                                    <p class="card-text">$4.95</p>
+                                </div>
+                                <!-- item call to action -->
+                                <div>
+                                    <a href="#" class="btn btn-primary">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card align-items-center text-center" style="width: auto;">
+                                <!-- item image -->
+                                <img src="http://www.mosburger.com.sg/image.php?im=131&t=2" class="card-img-top" style="width: 10em" alt="...">
+                                <div class="card-body">
+                                    <!-- item name -->
+                                    <h6 class="card-title">Morning Croissant Plate</h6>
+                                    <p class="card-text">$5.60</p>
+                                </div>
+                                <div>
+                                    <!-- item call to action -->
+                                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="location.href='mainMenu.html'" class="btn">
+                            <span class="text-center border">
+                                VIEW MORE
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- Kids Meal Featured Foods -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    KIDS MEAL
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <!-- Main menu products -->
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-xl-4 align-items-center">
+                        <div class="col">
+                            <div class="card align-items-center text-center" style="width: auto;">
+                                <!-- item image -->
+                                <img src="http://www.mosburger.com.sg/images/kidsmeal3.jpg" class="card-img-top img-fluid " style="width: 10em" alt="main menu item">
+                                <!-- item name -->
+                                <div class="card-body">
+                                    <h6 class="card-title">Morning Deluxe Toast Plate</h6>
+                                    <p class="card-text">$4.95</p>
+                                </div>
+                                <!-- item call to action -->
+                                <div>
+                                    <a href="#" class="btn btn-primary">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- end MOS menu -->
+
+        <!-- Start of Review Section -->
+        <div class="container pt-5">
+            <div class="container mt-2">
+                <h4 class="text-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                        <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"/>
+                    </svg>
+                    Reviews
+                </h4>
+                <div class="d-flex">
+                    <div class="row row-cols-2" style="background-color: #97be56;">
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <p class="small pt-3 ms-2">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, nisi? <br>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i> 
+                            </p>
+                        </div>
+                        <div class="col">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" class="img-fluid p-2" style="width:150em; height: auto;" alt="">
+                        </div>
                     </div>
                 </div>    
             </div>
-            <div class=" copyright">
-                <p>COPYRIGHT © 2007 - 2021 MOS FOODS SINGAPORE PTE LTD ALL RIGHTS RESERVED.</p>
+        </div>
+        <!-- End of Review Section -->
+
+        <!-- Start Delivery Services -->
+        <div class="container ">
+            <div class="container  mt-5 p-3">
+                <h4 class="text-center mb-4">Partner Delivery Services</h4>
+                <section class="customer-logos slider d-flex justify-content-between">
+                    <div class="slide"><img src="http://www.mosburger.com.sg/images/foodpanda.png"></div>
+                    <div class="slide"><img src="http://www.mosburger.com.sg/images/deliveroo.png"></div>
+                    <div class="slide"><img src="http://www.mosburger.com.sg/images/grabfood.png"></div>
+                </section>
             </div>
         </div>
+        <!-- End Delivery Services -->
+
+        <!-- Start Contact Us-->
+        <div class="container mt-5 p-5">
+            <h4 class="text-center mb-4">Get In Touch</h4>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Your Message" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Your Message</label>
+            </div>
+            <div class="position-relative">
+                <div class="position-absolute top-100 start-50 translate-middle pt-5">
+                    <button type="button" class="btn btn-outline-primary position-relative mt-3">Submit</button>
+                </div>
+            </div>
+        </div>
+        <!-- End Contact Us -->
+        
+        <!-- Start Footer Section -->
+        <footer class="container mt-5 pt-2 bg-dark text-white">
+            <div class="row">
+            <div class="col-9  mx-2 text-left">
+                <p class="small">
+                    COPYRIGHT &copy  2007 - 2021 MOS FOODS SINGAPORE PTE LTD ALL RIGHTS RESERVED. 
+                </p>
+            </div>
+            <div class="col d-flex pe-1 mx-2">                
+                <ul class="nav me-auto mb-2 mb-lg-1">
+                    <li class="p-1 fs-2">
+                    <a href="https://www.facebook.com/mosburgersg/">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    </li> 
+                    <li class="p-1 fs-2">
+                    <a href="https://www.instagram.com/mosburgersg/">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                    </li> 
+                </ul>
+            </div>
+            </div>
+        </footer>
+        <!-- End Footer Section -->
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        -->
     </body>
 </html>
