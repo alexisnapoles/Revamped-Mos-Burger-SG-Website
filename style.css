@@ -5,6 +5,10 @@
     font-family: 'Noto Sans', Sans-serif;
 }
 
+/* large screen */
+@media screen and (min-width:992) {
+
+}
 /* ipad */
 @media screen and (min-width:768px) {
     
